@@ -10,9 +10,9 @@ form.addEventListener('submit', function(e){
     if(numeroContato.value.length >= 10 && numeroContato.value.length <= 11){
         adicionaLinha()
         atualizaTabela()
+        limpainput()
     } else {
         alert(`A quantidade de caracteres deve ser 10 ou 11!`)
-        limpainput()
         console.log(numeroContato.value + numeroContato.value)
     }
 })
